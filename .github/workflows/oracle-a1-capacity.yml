@@ -3,8 +3,7 @@ name: Oracle A1 capacity monitor
 on:
   workflow_dispatch:
   schedule:
-    # A cada 5 minutos, deslocado do início da hora para reduzir atrasos do scheduler.
-    # Recomendado APENAS em repositório público para não consumir minutos pagos/limitados.
+    # A cada 5 minutos, deslocado do início da hora.
     - cron: "2,7,12,17,22,27,32,37,42,47,52,57 * * * *"
 
 permissions:
@@ -21,10 +20,10 @@ jobs:
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
 
       - name: Setup Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v7
         with:
           python-version: "3.12"
           cache: pip
