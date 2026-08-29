@@ -1,0 +1,1 @@
+Allow group A1CapacityMonitorGroup to manage compute-capacity-reports in tenancy

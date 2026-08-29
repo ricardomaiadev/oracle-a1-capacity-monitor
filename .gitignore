@@ -1,0 +1,6 @@
+.venv/
+__pycache__/
+*.pyc
+.env
+*.pem
+oci_api_key*
