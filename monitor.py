@@ -176,7 +176,6 @@ def main():
     output = {
         "checked_at_utc": now,
         "shape": SHAPE,
-        "availability_domain": availability_domain,
         "targets": summary,
     }
     print(json.dumps(output, indent=2, ensure_ascii=False))
