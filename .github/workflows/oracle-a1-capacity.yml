@@ -2,9 +2,9 @@ name: Oracle A1 capacity monitor
 
 on:
   workflow_dispatch:
-  schedule:
+  #schedule:
     # A cada 5 minutos, deslocado do início da hora.
-    - cron: "2,7,12,17,22,27,32,37,42,47,52,57 * * * *"
+    #- cron: "2,7,12,17,22,27,32,37,42,47,52,57 * * * *"
 
 permissions:
   contents: read
